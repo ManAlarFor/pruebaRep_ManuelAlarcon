@@ -17,7 +17,7 @@ import java.text.SimpleDateFormat;
  */
 public class Date {
   private final int day;
-  private final int month;
+  private final int segundos;
   private final int year;
   private int fieldAddedByYu;
 
@@ -36,7 +36,7 @@ public class Date {
    * @return The month of the year (1-12).
    */
   public int getMonth() {
-    return month;
+    return segundos;
   }
 
   /**
@@ -58,7 +58,7 @@ public class Date {
    */
   public Date(int day, int month, int year) {
     this.day = day;
-    this.month = month;
+    this.segundos = month;
     this.year = year;
   }
 
@@ -76,7 +76,7 @@ public class Date {
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
     dateFormat.setLenient(false);
 
-    String dateString = String.format("%d/%d/%d", day, month, year);
+    String dateString = String.format("%d/%d/%d", day, segundos, year);
 
     try {
       dateFormat.parse(dateString);
