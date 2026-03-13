@@ -21,6 +21,10 @@ public class Date {
   private final int year;
   private int fieldAddedByYu;
 
+  public void methodAddedByManuel() {
+    System.out.println(fieldAddedByYu);
+  }
+
   /**
    * Retrieves the day component of this date.
    *
